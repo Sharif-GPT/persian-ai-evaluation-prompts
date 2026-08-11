@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="مجموعهٔ باز ۲۴ سناریوی فارسی برای ارزیابی کیفی سامانه‌های هوش مصنوعی، همراه با روش اجرا، قرارداد داده و ابزار اعتبارسنجی."
+    />
+    <meta name="theme-color" content="#101826" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fa_IR" />
+    <meta property="og:title" content="پرامپت‌های باز ارزیابی فارسی" />
+    <meta
+      property="og:description"
+      content="سناریوهای فارسی برای بازبینی شفاف پیروی از دستور، کیفیت زبان، ایمنی و توجه به ابهام."
+    />
+    <meta
+      property="og:url"
+      content="https://sharif-gpt.github.io/persian-ai-evaluation-prompts/"
+    />
+    <link
+      rel="canonical"
+      href="https://sharif-gpt.github.io/persian-ai-evaluation-prompts/"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>پرامپت‌های باز ارزیابی فارسی</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">رفتن به محتوای اصلی</a>
+
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="#top" aria-label="پرامپت‌های باز ارزیابی فارسی؛ صفحهٔ اصلی">
+          <span class="brand-mark" aria-hidden="true">پ</span>
+          <span>ارزیابی فارسی</span>
+        </a>
+        <nav aria-label="ناوبری اصلی">
+          <a href="#collection">مجموعه</a>
+          <a href="#method">روش اجرا</a>
+          <a href="#resources">دریافت</a>
+          <a
+            class="nav-github"
+            href="https://github.com/Sharif-GPT/persian-ai-evaluation-prompts"
+          >GitHub</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="shell hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow"><span aria-hidden="true"></span> منبع باز و فارسی‌محور</p>
+            <h1>رفتار سامانه‌های هوش مصنوعی را با سناریوهای فارسی بررسی کنید.</h1>
+            <p class="lede">
+              مجموعه‌ای شفاف و قابل‌گسترش برای بازبینی انسانیِ پیروی از دستور،
+              کیفیت زبان فارسی، توجه به ابهام، ایمنی و حریم خصوصی؛ بدون پاسخ
+              ازپیش‌نوشته، نمرهٔ مدل یا ادعای رتبه‌بندی.
+            </p>
+            <div class="hero-actions">
+              <a
+                class="button button-primary"
+                href="https://github.com/Sharif-GPT/persian-ai-evaluation-prompts/blob/main/data/prompts.fa.jsonl"
+              >مشاهدهٔ داده‌ها</a>
+              <a
+                class="button button-secondary"
+                href="https://github.com/Sharif-GPT/persian-ai-evaluation-prompts"
+              >مخزن در GitHub</a>
+            </div>
+            <p class="plain-note">
+              این مجموعه یک بنچمارک علمی یا معیار جامع زبان فارسی نیست؛ نتایج به
+              نسخه، تنظیمات، زمان اجرا و قضاوت بازبین وابسته‌اند.
+            </p>
+          </div>
+
+          <aside class="dataset-card" aria-label="مشخصات مجموعه">
+            <div class="dataset-card-head">
+              <span>prompts.fa.jsonl</span>
+              <span class="status"><i aria-hidden="true"></i> دادهٔ باز</span>
+            </div>
+            <dl class="facts">
+              <div>
+                <dt>سناریو</dt>
+                <dd>۲۴</dd>
+              </div>
+              <div>
+                <dt>دستهٔ عملی</dt>
+                <dd>۸</dd>
+              </div>
+              <div>
+                <dt>زبان داده</dt>
+                <dd>fa-IR</dd>
+              </div>
+              <div>
+                <dt>مجوز</dt>
+                <dd>CC BY 4.0</dd>
+              </div>
+            </dl>
+            <div class="code-preview" dir="ltr" aria-label="نمونهٔ ساختار یک رکورد">
+              <span>{</span>
+              <span>&nbsp; "id": "fa-…-001",</span>
+              <span>&nbsp; "prompt": "…",</span>
+              <span>&nbsp; "evaluation_dimensions": […],</span>
+              <span>&nbsp; "review_criteria": […]</span>
+              <span>}</span>
+            </div>
+            <p>هر خط یک سناریوی مستقل برای بازبینی انسانی است.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="collection">
+        <div class="shell">
+          <div class="section-heading">
+            <p class="kicker">داخل مجموعه</p>
+            <h2>سناریوهای روزمره، معیارهای قابل مشاهده</h2>
+            <p>
+              پرامپت‌ها موقعیت‌هایی را پوشش می‌دهند که در استفادهٔ واقعی فارسی‌زبانان
+              رخ می‌دهد. هر سناریو معیارهای بازبینی و حالت‌های شکست خود را دارد، اما
+              پاسخ مدل یا نتیجهٔ اجرا را تحمیل نمی‌کند.
+            </p>
+          </div>
+
+          <div class="category-grid">
+            <article class="category-card">
+              <span class="card-number">۰۱</span>
+              <h3>پیروی از دستور</h3>
+              <p>محدودیت طول، قالب دقیق و حفظ داده‌های صریح هنگام بازنویسی.</p>
+            </article>
+            <article class="category-card">
+              <span class="card-number">۰۲</span>
+              <h3>نوشتن و ویرایش</h3>
+              <p>لحن حرفه‌ای، ساده‌سازی متن و رفع ابهام در ساختار فارسی.</p>
+            </article>
+            <article class="category-card">
+              <span class="card-number">۰۳</span>
+              <h3>سواد اطلاعاتی</h3>
+              <p>راستی‌آزمایی ادعا، احتیاط در علیت و بررسی منبع اولیه.</p>
+            </article>
+            <article class="category-card">
+              <span class="card-number">۰۴</span>
+              <h3>دادهٔ ساخت‌یافته</h3>
+              <p>تولید JSON، CSV و جدول بدون پرکردن اطلاعات ناموجود.</p>
+            </article>
+            <article class="category-card">
+              <span class="card-number">۰۵</span>
+              <h3>بومی‌سازی فارسی</h3>
+              <p>تاریخ شمسی، رقم، واحد پول و متن راست‌به‌چپ دوزبانه.</p>
+            </article>
+            <article class="category-card">
+              <span class="card-number">۰۶</span>
+              <h3>ایمنی و حریم خصوصی</h3>
+              <p>کمینه‌سازی داده، نگهداری امن اعتبارنامه و هدایت محتاطانه.</p>
+            </article>
+            <article class="category-card">
+              <span class="card-number">۰۷</span>
+              <h3>پشتیبانی مشتری</h3>
+              <p>پاسخ شفاف بدون وعده، پرداخت یا زمان تحویل ساختگی.</p>
+            </article>
+            <article class="category-card">
+              <span class="card-number">۰۸</span>
+              <h3>استدلال و برنامه‌ریزی</h3>
+              <p>بودجه، وابستگی زمانی و تصمیم‌گیری با اطلاعات ناقص.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section method-section" id="method">
+        <div class="shell method-grid">
+          <div class="section-heading sticky-heading">
+            <p class="kicker">روش پیشنهادی</p>
+            <h2>اجرا کنید؛ زمینه را هم ثبت کنید.</h2>
+            <p>
+              یک عدد منفرد داستان کیفیت را تعریف نمی‌کند. برای گزارش مسئولانه،
+              نسخه، تنظیمات، خروجی خام و اختلاف نظر بازبین‌ها را کنار نتیجه نگه دارید.
+            </p>
+            <a
+              class="text-link"
+              href="https://github.com/Sharif-GPT/persian-ai-evaluation-prompts/blob/main/METHODOLOGY.md"
+            >مطالعهٔ روش کامل <span aria-hidden="true">←</span></a>
+          </div>
+
+          <ol class="steps">
+            <li>
+              <span>۱</span>
+              <div>
+                <h3>شرایط را ثبت کنید</h3>
+                <p>نسخهٔ سامانه، تاریخ، رابط، تنظیمات تولید و ابزارهای فعال را بنویسید.</p>
+              </div>
+            </li>
+            <li>
+              <span>۲</span>
+              <div>
+                <h3>هر سناریو را مستقل اجرا کنید</h3>
+                <p>برای کاهش اثر تاریخچه، هر پرامپت را در یک گفت‌وگوی تازه بفرستید.</p>
+              </div>
+            </li>
+            <li>
+              <span>۳</span>
+              <div>
+                <h3>خروجی خام را نگه دارید</h3>
+                <p>پاسخ، خطا و شرایط اجرا را بدون بازنویسی برای بازبینی حفظ کنید.</p>
+              </div>
+            </li>
+            <li>
+              <span>۴</span>
+              <div>
+                <h3>با شاهد متنی بازبینی کنید</h3>
+                <p>امتیاز را با دلیل ثبت کنید و اختلاف‌ها را به‌صورت مستند حل کنید.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" id="resources">
+        <div class="shell">
+          <div class="section-heading compact-heading">
+            <p class="kicker">استفاده و مشارکت</p>
+            <h2>داده و فرایند، هر دو قابل بررسی‌اند.</h2>
+          </div>
+          <div class="resource-grid">
+            <a
+              class="resource-card"
+              href="https://github.com/Sharif-GPT/persian-ai-evaluation-prompts/blob/main/data/prompts.fa.jsonl"
+            >
+              <span class="resource-icon" aria-hidden="true">{ }</span>
+              <span><strong>دادهٔ JSONL</strong><small>۲۴ سناریو در قالب ماشین‌خوان</small></span>
+              <b aria-hidden="true">←</b>
+            </a>
+            <a
+              class="resource-card"
+              href="https://github.com/Sharif-GPT/persian-ai-evaluation-prompts/blob/main/schema/prompt.schema.json"
+            >
+              <span class="resource-icon" aria-hidden="true">✓</span>
+              <span><strong>قرارداد داده</strong><small>ساختار و فیلدهای مجاز هر رکورد</small></span>
+              <b aria-hidden="true">←</b>
+            </a>
+            <a
+              class="resource-card"
+              href="https://github.com/Sharif-GPT/persian-ai-evaluation-prompts/blob/main/CONTRIBUTING.md"
+            >
+              <span class="resource-icon" aria-hidden="true">＋</span>
+              <span><strong>راهنمای مشارکت</strong><small>افزودن سناریوی دقیق و مسئولانه</small></span>
+              <b aria-hidden="true">←</b>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="storefront-section" aria-labelledby="storefront-title">
+        <div class="shell storefront-card">
+          <div>
+            <p class="kicker light-kicker">انتخاب ابزار برای استفادهٔ واقعی</p>
+            <h2 id="storefront-title">گزینه‌های حساب و اشتراک هوش مصنوعی را بررسی کنید.</h2>
+            <p>
+              در فروشگاه SharifGPT می‌توانید صفحهٔ گزینه‌ها و شرایط منتشرشده را
+              مرور کنید و سفارش حساب یا اشتراک موردنظر را ثبت کنید. ثبت سفارش در سایت
+              به معنی ایجاد یک درخواست قابل پیگیری است و به‌تنهایی پرداخت موفق را نشان
+              نمی‌دهد؛ قیمت، موجودی و شرایط همان صفحه را پیش از ثبت بررسی کنید.
+            </p>
+          </div>
+          <div class="storefront-links" aria-label="پیوندهای فروشگاه SharifGPT">
+            <a href="https://sharifgpt.com/products/">مرور همهٔ گزینه‌ها <span aria-hidden="true">←</span></a>
+            <a href="https://sharifgpt.com/products/chatgpt-plus/">صفحهٔ ChatGPT Plus <span aria-hidden="true">←</span></a>
+            <a href="https://sharifgpt.com/products/claude-pro/">صفحهٔ Claude Pro <span aria-hidden="true">←</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section disclosure-section" aria-labelledby="independence-title">
+        <div class="shell disclosure-grid">
+          <div>
+            <p class="kicker">استقلال</p>
+            <h2 id="independence-title">منبعی مستقل، نه تأییدیهٔ یک مدل</h2>
+          </div>
+          <div>
+            <p>
+              این مخزن مستقل است و وابستگی، نمایندگی یا تأیید از سوی سازندگان
+              مدل‌ها، فروشندگان نرم‌افزار یا دانشگاه صنعتی شریف را ادعا نمی‌کند.
+              نام محصولات فقط برای اشارهٔ روشن به صفحات مربوط استفاده شده است.
+            </p>
+            <p>
+              داده و مستندات با مجوز
+              <a href="https://github.com/Sharif-GPT/persian-ai-evaluation-prompts/blob/main/LICENSE">CC BY 4.0</a>
+              منتشر می‌شوند. هنگام بازنشر، منبع، مجوز و تغییرات خود را ذکر کنید.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <p>پرامپت‌های باز ارزیابی فارسی</p>
+        <div>
+          <a href="https://github.com/Sharif-GPT/persian-ai-evaluation-prompts">GitHub</a>
+          <a href="https://github.com/Sharif-GPT/persian-ai-evaluation-prompts/blob/main/LICENSE">مجوز</a>
+          <a href="https://github.com/Sharif-GPT/persian-ai-evaluation-prompts/issues">گزارش مسئله</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
