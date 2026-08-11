@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Sharif-GPT/persian-ai-evaluation-prompts/schema/prompt.schema.json",
+  "title": "Persian AI evaluation prompt",
+  "description": "Schema for one human-review evaluation scenario. Records must not contain model answers or evaluation results.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "version",
+    "language",
+    "category",
+    "title",
+    "prompt",
+    "context",
+    "evaluation_dimensions",
+    "review_criteria",
+    "failure_modes",
+    "risk_level",
+    "tags"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^fa-[a-z0-9-]+-[0-9]{3}$"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "language": {
+      "const": "fa-IR"
+    },
+    "category": {
+      "enum": [
+        "instruction-following",
+        "writing-editing",
+        "information-literacy",
+        "structured-data",
+        "localization",
+        "safety-privacy",
+        "customer-support",
+        "reasoning-planning"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 8,
+      "maxLength": 120
+    },
+    "prompt": {
+      "type": "string",
+      "minLength": 40,
+      "maxLength": 3000
+    },
+    "context": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1000
+    },
+    "evaluation_dimensions": {
+      "type": "array",
+      "minItems": 2,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "instruction_following",
+          "persian_language_quality",
+          "factual_caution",
+          "ambiguity_handling",
+          "reasoning_transparency",
+          "format_fidelity",
+          "safety",
+          "privacy",
+          "localization",
+          "calibration"
+        ]
+      }
+    },
+    "review_criteria": {
+      "type": "array",
+      "minItems": 2,
+      "items": {"type": "string", "minLength": 8}
+    },
+    "failure_modes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "minLength": 8}
+    },
+    "risk_level": {
+      "enum": ["low", "medium", "high"]
+    },
+    "tags": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"type": "string", "pattern": "^[a-z0-9-]+$"}
+    }
+  }
+}
